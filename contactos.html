@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/873370864a.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./estilo/style-contactos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./favicon/favicon-contactos.png" type="image/x-icon">
+        <title>Contactos</title>
+    </head>
+    <body>
+        <header class="contain-header">
+            <div class="logo">
+                <img src="./logo/logo2.png" width="200px" alt>
+            </div>
+            <div class="titulo-header">
+                Proyecto Turismo
+            </div>
+            <div class="btn-header">
+                <button type="button" class="btn" onclick="window.location.href='./principal.html'">Ir Home</button>
+            </div>
+        </header>
+        <section class="contain-section">
+
+            <section class="contact-info">
+                <section class="info-title">
+                    <span class="fa fa-user-circle"></i></span>
+                    <h2>Información<br>de Contacto</h2>
+                </section>
+                <section class="info-item">
+                    <p><span class="fa fa-envelope"></span>info.contacto@gmail.com</p>
+                    <p><span class="fa fa-mobile"></span>+54-1160565656</p>          
+                </section>
+            </section>
+
+            <form class="form-contact">
+                <h2>Envianos un mensaje</h2>
+                <div class="user-info">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name">
+
+                    <label for="telefono">Telefono:</label>
+                    <input type="text" id="telefono">
+
+                    <label for="e-mail">Correo Electronico:</label>
+                    <input type="email" id="e-mail">
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje"></textarea>
+
+                    <input type="button" value="Enviar Mensaje" id="btn-enviar">
+                </div>
+
+            </form>
+        </section>
+    </body>
+</html>
