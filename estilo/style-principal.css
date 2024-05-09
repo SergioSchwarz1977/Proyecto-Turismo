@@ -63,6 +63,10 @@
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      color: rgb(183, 216, 235);
  }
+ #titulo2{
+    color: blue;
+    text-decoration: underline;
+ }
 
  .login {
      display: flex;
