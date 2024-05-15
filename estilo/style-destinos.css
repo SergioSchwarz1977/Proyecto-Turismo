@@ -1,0 +1,103 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "aside main  main aside2"
+        "aside widgets widgets aside2"
+        "footer footer footer footer";
+}
+
+.container .header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.container .aside {
+    grid-area: aside;
+    background-color: yellow;
+
+}
+
+.container .main {
+    grid-area: main;
+    background-color: green;
+}
+
+.container .aside2 {
+    grid-area: aside2;
+    background-color: blue;
+}
+
+.container .widgets {
+    grid-area: widgets;
+    background-color: red;
+}
+
+.container .footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    background-image: url(/img/img-perito.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+
+.card1 {
+    background-image: url(/img/img-baires.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.card2 {
+    background-image: url(/img/img-brazil.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.card3 {
+    background-image: url(/img/img-carloz-paz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+
+/* .card .card1 .card2 .card3{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+
+.card h3 {
+    text-align: center;
+}
+.btn{
+
+    left: auto;
+    bottom:auto ;
+    
+}
