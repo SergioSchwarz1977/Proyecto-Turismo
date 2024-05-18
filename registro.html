@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilo/style-registro.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="./favicon/registro.png" type="image/x-icon">
+        <title>Registro💻📚</title>
+    </head>
+    <body>
+        <form class="formulario_registro" action="./login.html">
+            <div class="return">
+                <button type="button" class="btn-fin" onclick="window.location.href='./principal.html'">Ir a Principal</button>
+            </div>
+            <h1 class="titulo">Formulario de Alta de Usuario</h1>
+
+            <div class="contain">
+                <label for>Apellido:</label>
+                <input type="text" name="apellido"
+                    placeholder="Ingrese su apellido" required><br><br>
+                <label for>Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre"
+                    required><br><br>
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario"
+                    placeholder="Ingrese su usuario" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password"
+                    placeholder="Ingrese su password" required> <br> <br>
+                <label for="estudios">Estudios: </label>
+                <input type="checkbox" title="Estudios" name="estudios"
+                    id="primario"> Primarios
+                <input type="checkbox" title="Estudios" name="estudios"
+                    id="secundario"> Secundario
+                <input type="checkbox" title="Estudios" name="estudios"
+                    id="terciario"> Terciarios
+                <input type="checkbox" title="Estudios" name="estudios"
+                    id="universitario"> Universitarios
+                <input type="checkbox" title="Estudios" name="estudios"
+                    id="otros"> Otros <br><br>
+                <label for="civil">Estado civil: </label>
+                <input type="radio" id="soltero" title="Soltero/a"
+                    name="estadocivil"> Soltero
+                <input type="radio" id="casado" title="Casado"
+                    name="estadocivil"> Casado
+                <input type="radio" id="viudo" title="Viudo/a"
+                    name="estadocivil"> Viudo
+                <input type="radio" id="divolciado" title="Divolciado/a"
+                    name="estadocivil"> Divolciado
+                <input type="radio" id="otro" title="Otro" name="estadocivil">
+                Otro
+                <br><br>
+                <label for="nacionalidad">Nacionalidad</label>
+                <select name="nacionalidad" id="nacionalidad">Nacionalidad
+                    <option value="arg">Argentina</option>
+                    <option value="par">Paraguay</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="bra">Brasil</option>
+                    <option value="ven">Venuzuela</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br><br><br>
+                <div class="enviar_form">
+                    <input type="submit" class="enviar">
+                    <input type="reset" value="Borrar" class="enviar">
+
+                </div>
+            </div>
+        </form>
+
+    </body>
 </html>

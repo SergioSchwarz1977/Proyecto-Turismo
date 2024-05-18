@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.291);
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.067);
+}
+.titulo-header h1{
+    font-family: "Freeman", sans-serif;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.titulo{
+    text-align: center;
+    margin: 10px;
+    font-family: "Freeman", sans-serif;
+}
+
+.encabezado input{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+input::placeholder{
+    color: white;
+    background-color: black;
+    font-family: "Freeman", sans-serif;
+}
+.btn-registro{
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 1px 2px white;
+    font-family: "Freeman", sans-serif;
+   
+}
+.btn-registro:hover{
+    transform: translateY(-3px);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px 1px 2px rgb(243, 37, 37);
+}
+.img-contain{
+    width: 700px;
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.img-contain img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.img-contain p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(10, 1, 9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Freeman", sans-serif;
+    
+}
+#p::first-letter{
+    font-size: 2rem;
+    
+}
+.no-registro-p{
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+.footer{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: "Freeman", sans-serif;
+ 
+    background-color: rgba(0, 255, 255, 0.264);
+}

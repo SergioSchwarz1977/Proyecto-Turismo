@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilo/style-login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Freeman&display=swap"
+            rel="stylesheet">
+            <link rel="shortcut icon" href="./favicon/login.png" type="image/x-icon">
+        <title>Login👨‍💻</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="./logo/logo2.png" alt="logo" width="150">
+            </div>
+            <div class="titulo-header">
+                <h1>
+                    Registrarse en Proyecto Turismo
+                </h1>
+            </div>
+        </header>
+        <div class="contain">
+            <div class="login">
+                <div class="titulo">
+                    <h1>Login</h1>
+                </div>
+                <div class="encabezado">
+                    <form action>
+                        <input type="text" class="usuario" title="Usuario"
+                            placeholder="Usuario" id="usuario" required><br><br>
+
+                        <input type="password" title="Clave" class="password"
+                            placeholder="Clave" id="password" required>
+
+                    </div>
+                    <br><br>
+                    <div class="btn">
+                        <button class="btn-registro" type="submit"
+                            onclick>Registrarse</button>
+                        <!-- <button class="btn-borrar" type="reset">Borrar</button> -->
+                    </div>
+
+                </form>
+                <br><br>
+                <div class="no-registro">
+                    <p class="no-registro-p">No estas registrado, <a
+                            href="./registro.html">Click
+                            acá</a> </p>
+                </div>
+                <br><br>
+            </div>
+            <div class="img-contain">
+                <img src="./img/img-iguazu.jpg" alt="fondo-login" width="500px">
+                <h3>Gracias por Registrarse</h3>
+                <p id="p">Gracias por registrarse en nuestro sitio web. Luego
+                    podras elegir tu destino favorito para organizar una salida
+                    inolvidable... </p>
+            </div>
+        </div>
+        <footer class="footer">
+            <h1>Todos los derechos reservados ®2024</h1>
+
+        </footer>
+    </body>
 </html>

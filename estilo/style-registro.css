@@ -1,0 +1,86 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(/img/img-polonia.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 2;
+}
+
+.titulo {
+
+    margin-bottom: 10px;
+    padding: 20px;
+    /* background: linear-gradient(to right, #e91e6f, rgb(247, 247, 31), #b5054b); */
+    background-clip: text;
+    /* font-family: "Josefin Sans", sans-serif; */
+    /* color: transparent; */
+    font-family: "Anton", sans-serif;
+    font-weight: 900;
+    color: rgb(90, 51, 4);
+
+
+}
+
+.contain {
+    border: 2px solid orange;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+}
+
+select>option {
+    background-color: black;
+}
+
+.enviar_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+
+}
+
+.enviar {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgb(red, green, blue .5);
+}
+
+.enviar:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: #881c01;
+    color: rgb(218, 241, 43);
+}
+
+.return {
+    margin: 10px;
+}
+
+.btn-fin {
+    top: 10px;
+    left: 0%;
+    bottom: 0%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.btn-fin:hover{
+    cursor: pointer;
+    transform: translateY(-4px);
+    background-color: #923ddc;
+}
