@@ -9,14 +9,17 @@
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
         "header header header header"
-        "aside main  main aside2"
-        "aside widgets widgets aside2"
+        "aside main main main"
+        "aside widgets widgets widgets"
         "footer footer footer footer";
 }
 
 .container .header {
     grid-area: header;
     background-color: aqua;
+    background-image: url(/img/img/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container .aside {
@@ -37,10 +40,11 @@
 
 .container .widgets {
     grid-area: widgets;
-    background-color: red;
+    background-color: rgb(230, 168, 168);
+    background-image: url(/img/img/imagen4.jpg);
 }
 
-.container .footer {
+.container #footer {
     grid-area: footer;
     background-color: blueviolet;
 }
@@ -62,8 +66,9 @@
 }
 
 .btn-header:hover {
-    text-decoration: underline;
+    
     transform: translateY(-5px);
+    background-color: black;
 
 
 }
@@ -74,11 +79,16 @@
     background-size: cover;
     background-position: center;
     height: 300px;
-    color: rgb(12, 0, 0);
+    
     position: relative;
     text-align: center;
     border: 3px solid white;
+  
 
+}
+.card p{
+    color: black;
+    font-weight: bold;
 }
 
 .btn {
@@ -110,6 +120,7 @@
     height: 300px;
     position: relative;
     color: white;
+    font-weight: 900;
     border: 3px solid white;
 }
 
@@ -140,6 +151,7 @@
     height: 300px;
     position: relative;
     color: black;
+    font-weight: 900;
     border: 3px solid white;
 }
 
@@ -171,6 +183,7 @@
     height: 300px;
     position: relative;
     color: black;
+    font-weight: 900;
     border: 3px solid white;
 }
 
@@ -207,18 +220,90 @@ h1 {
     font-family: "Poetsen One", sans-serif;
 }
 .main{
-    background-image: url(/img/img-iguazu.jpg);
+    background-image: url(/img/img/imagen1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+.main h1{
+    margin-top: 20px;
 }
 .aside-card{
     border: 3px solid black;
     background-color: yellow;
+}
+.widgets{
+    font-size: 20px;
+    font-weight: 900;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 10px;
+   
+}
+.widgets-card{
+    border:  1px solid black;
+    max-width: 100%;
+    margin: 10px 5px 10px 10px;
+    
+}
+.widgets-card h3, p{
+    color: white;
+    margin: 5px;
+}
+.widgets-card img{
+   margin-left: 30px;
+   
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 30px 0px 10px 0px;
+    background-image: url(/img/fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-size: cover;
+
+
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer li {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer a {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer i {
+    font-size: 30px;
+    color: rgb(62, 3, 65);
+}
+a:hover{
+   transform: translateY(-5px);  
+   
 }
 
 
 
 @media(max-width: 768px) {
     .header {
-        max-width: 100%;
+        max-width: 120%;
     }
 
     .logo {
@@ -239,8 +324,9 @@ h1 {
     }
 
     .card h3 {
-        font-size: 60%;
+        font-size: 50%;
         text-decoration: none;
+        margin-left: 5px;
     }
 
     .card p {
@@ -255,7 +341,7 @@ h1 {
     }
 
     .card1 h3 {
-        font-size: 60%;
+        font-size: 50%;
         text-decoration: none;
     }
 
@@ -270,7 +356,7 @@ h1 {
         font-size: 50%;
     }
     .card2 h3 {
-        font-size: 60%;
+        font-size: 50%;
         text-decoration: none;
     }
 
@@ -285,7 +371,7 @@ h1 {
         font-size: 50%;
     }
     .card3 h3 {
-        font-size: 60%;
+        font-size: 50%;
         text-decoration: none;
     }
 
@@ -299,8 +385,41 @@ h1 {
         left: 10%;
         font-size: 50%;
     }
+    .main{    
+        max-width: 100%;       
+        font-size: 7px;
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .widgets{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        font-size: 15px;
+        
+    }
+    .widgets img{
+        max-width: 50%;
+        
+    }
+    .widgets p{
+        max-width: 100%;
+        color: rgb(2, 0, 10);
+        font-weight: 900;
+        font-family: "Poetsen One", sans-serif;
 
+    }
+    .footer{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
 
-
+    }
+    .footer a{
+        margin: 10px;
+    }
 
 }

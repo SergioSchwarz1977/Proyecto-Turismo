@@ -125,6 +125,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     max-width: 90%;
      font-size: 20px;
      padding: 2px;
      height: 50px;
@@ -237,13 +238,14 @@
  }
 
 
- .aside .aside-titulo {
+ .aside #aside-titulo {
      text-align: center;
-     margin: 0px 0 10px 0;
+     margin: 0px 0 20px 0;
      font-size: 30px;
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      color: rgb(62, 62, 235);
      text-decoration: underline;
+     max-width: 90%;
  }
 
  .aside .aside-p {
@@ -297,6 +299,8 @@
  .footer i {
      font-size: 30px;
      color: rgb(62, 3, 65);
-
-
+ }
+ a:hover{
+    transform: translateY(-5px);  
+    
  }
