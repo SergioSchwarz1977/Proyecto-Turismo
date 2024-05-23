@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 .header{
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 255, 255, 0.291);
+    background-color: rgba(0, 255, 34, 0.57);
+    
+    background-size: cover;
 }
 .contain{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 255, 255, 0.067);
+    background-color: rgba(0, 255, 34, 0.57);
+   
 }
 .titulo-header h1{
     font-family: "Freeman", sans-serif;
@@ -22,19 +26,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid rgb(205, 240, 7);
     max-width: 100%;
     border: 1px solid black;
     border-radius: 5px;
 }
 .titulo{
     text-align: center;
-    margin: 10px;
+    margin: 7px;
     font-family: "Freeman", sans-serif;
 }
 
 .encabezado input{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 10px;
 }
 input::placeholder{
@@ -44,7 +48,7 @@ input::placeholder{
 }
 .btn-registro{
     max-width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 5px;
     border-radius: 5px;
     background-color: black;
@@ -65,20 +69,20 @@ input::placeholder{
     height: 370px;
     position: relative;
     overflow: hidden;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 5px;
 
 }
 .img-contain img{
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .img-contain p{
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(10, 1, 9);
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,12 +97,13 @@ input::placeholder{
 .no-registro-p{
     color: black;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 17px;
+    margin: 5px;
 }
 .footer{
     text-align: center;
     padding: 20px 0 20px 0;
     font-family: "Freeman", sans-serif;
  
-    background-color: rgba(0, 255, 255, 0.264);
+    background-color: rgba(0, 255, 34, 0.57);
 }

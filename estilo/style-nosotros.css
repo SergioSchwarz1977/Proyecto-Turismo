@@ -87,6 +87,8 @@ main {
 
     p {
         inset: auto auto 80px 30px;
+        color: rgb(2, 6, 24);
+        font-weight: 900;
     }
 
     a {
@@ -108,7 +110,7 @@ main {
 
     &:hover img {
         transition: opacity .3s ease-in;
-        opacity: 1;
+        opacity: 0.7;
     }
 
 }
@@ -132,12 +134,17 @@ main {
     main {
         grid-template-columns: 1fr 1fr;
     }
+    .header h1{
+        text-align: center;
+       
+    }
 }
 
 @media(max-width:780px) {
     .header {
+        max-width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         font-family: "Farsan", cursive;
         background-color: rgb(160, 160, 243);
@@ -146,6 +153,7 @@ main {
     }
     .header h1{
         text-align: center;
+        
     }
 
     .logo {

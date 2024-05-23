@@ -19,6 +19,7 @@
     background-color: aqua;
     background-image: url(/img/img/imagen2.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -42,6 +43,8 @@
     grid-area: widgets;
     background-color: rgb(230, 168, 168);
     background-image: url(/img/img/imagen4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container #footer {
@@ -55,6 +58,10 @@
     align-items: center;
 }
 
+.titulo {
+    color: white;
+}
+
 .btn-header {
     background-color: rgb(45, 197, 239);
     color: white;
@@ -66,12 +73,12 @@
 }
 
 .btn-header:hover {
-    
+
     transform: translateY(-5px);
     background-color: black;
 
-
 }
+
 
 .card {
     background-image: url(/img/img-perito.jpeg);
@@ -79,14 +86,15 @@
     background-size: cover;
     background-position: center;
     height: 300px;
-    
+
     position: relative;
     text-align: center;
     border: 3px solid white;
-  
+
 
 }
-.card p{
+
+.card p {
     color: black;
     font-weight: bold;
 }
@@ -187,6 +195,10 @@
     border: 3px solid white;
 }
 
+.card3 p {
+    color: black;
+}
+
 .btn3 {
     position: absolute;
     left: 40%;
@@ -219,7 +231,8 @@ h3 {
 h1 {
     font-family: "Poetsen One", sans-serif;
 }
-.main{
+
+.main {
     background-image: url(/img/img/imagen1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,37 +240,45 @@ h1 {
     font-size: 10px;
     letter-spacing: 2px;
     text-align: center;
-    
+
 }
-.main h1{
+
+.main h1 {
     margin-top: 20px;
 }
-.aside-card{
+
+.aside-card {
     border: 3px solid black;
     background-color: yellow;
 }
-.widgets{
+
+.widgets {
     font-size: 20px;
     font-weight: 900;
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     gap: 10px;
-   
+
 }
-.widgets-card{
-    border:  1px solid black;
+
+.widgets-card {
+    border: 1px solid black;
     max-width: 100%;
     margin: 10px 5px 10px 10px;
-    
+
 }
-.widgets-card h3, p{
+
+.widgets-card h3,
+p {
     color: white;
     margin: 5px;
 }
-.widgets-card img{
-   margin-left: 30px;
-   
+
+.widgets-card img {
+    margin-left: 30px;
+
 }
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -294,16 +315,50 @@ footer {
     font-size: 30px;
     color: rgb(62, 3, 65);
 }
-a:hover{
-   transform: translateY(-5px);  
-   
+
+a:hover {
+    transform: translateY(-5px);
+
 }
 
+@media(max-width: 1280px) {
+    .header {
+        max-width: 100%;
+    }
+
+    .widgets {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        font-size: 15px;
+
+    }
+
+    .widgets img {
+        width: 80%;
+        align-items: center;
+
+
+    }
+
+    .widgets p {
+        max-width: 100%;
+        color: rgb(1, 5, 29);
+        font-weight: 900;
+        font-family: "Poetsen One", sans-serif;
+
+    }
+
+    .widgets h3 {
+        color: black;
+    }
+}
 
 
 @media(max-width: 768px) {
     .header {
-        max-width: 120%;
+        max-width: 100%;
     }
 
     .logo {
@@ -355,6 +410,7 @@ a:hover{
         left: 10%;
         font-size: 50%;
     }
+
     .card2 h3 {
         font-size: 50%;
         text-decoration: none;
@@ -370,6 +426,7 @@ a:hover{
         left: 10%;
         font-size: 50%;
     }
+
     .card3 h3 {
         font-size: 50%;
         text-decoration: none;
@@ -385,40 +442,46 @@ a:hover{
         left: 10%;
         font-size: 50%;
     }
-    .main{    
-        max-width: 100%;       
+
+    .main {
+        max-width: 100%;
         font-size: 7px;
         display: grid;
         grid-template-columns: 90%;
     }
-    .widgets{
+
+    .widgets {
         max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         flex-direction: row;
         font-size: 15px;
-        
+
     }
-    .widgets img{
+
+    .widgets img {
         max-width: 50%;
-        
+
     }
-    .widgets p{
+
+    .widgets p {
         max-width: 100%;
         color: rgb(2, 0, 10);
         font-weight: 900;
         font-family: "Poetsen One", sans-serif;
 
     }
-    .footer{
+
+    .footer {
         max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-       
+
 
     }
-    .footer a{
+
+    .footer a {
         margin: 10px;
     }
 

@@ -10,7 +10,7 @@
             href="https://fonts.googleapis.com/css2?family=Freeman&display=swap"
             rel="stylesheet">
             <link rel="shortcut icon" href="./favicon/login.png" type="image/x-icon">
-        <title>Login👨‍💻</title>
+        <title>Login👨</title>
     </head>
     <body>
         <header class="header">
@@ -29,18 +29,22 @@
                     <h1>Login</h1>
                 </div>
                 <div class="encabezado">
-                    <form action>
+                    <form action ="./principal.html" id="form">
+
                         <input type="text" class="usuario" title="Usuario"
-                            placeholder="Usuario" id="usuario" required><br><br>
+                            placeholder="Usuario" id="usuario"><br>
+
+                        <input type="email" class="email" title="Email"
+                            placeholder="Email" id="email"><br>
 
                         <input type="password" title="Clave" class="password"
-                            placeholder="Clave" id="password" required>
+                            placeholder="Clave" id="password">
 
                     </div>
                     <br><br>
                     <div class="btn">
                         <button class="btn-registro" type="submit"
-                            onclick>Registrarse</button>
+                            ">Registrarse</button>
                         <!-- <button class="btn-borrar" type="reset">Borrar</button> -->
                     </div>
 
@@ -65,5 +69,6 @@
             <h1>Todos los derechos reservados ®2024</h1>
 
         </footer>
+        <script src="./validar_login.js"></script>
     </body>
 </html>

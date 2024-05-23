@@ -5,6 +5,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: url(/img/img-polonia.jpg) no-repeat center center fixed;
     background-size: cover;
+    opacity: 1;
     color: white;
     font-weight: bold;
     
@@ -30,6 +31,13 @@ body {
     color: rgb(90, 51, 4);
 
 
+}
+input::placeholder{
+    color: rgb(241, 235, 235);
+}
+input{
+    color: rgb(197, 198, 237);
+    font-size: 18px;
 }
 
 .contain {
