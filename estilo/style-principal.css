@@ -54,6 +54,7 @@
      width: 100%;
      height: 250px;
  }
+
  /* .navbar{
     display: flex;
     justify-content: space-between;
@@ -300,7 +301,132 @@
      font-size: 30px;
      color: rgb(62, 3, 65);
  }
- a:hover{
-    transform: translateY(-5px);  
-    
+
+ a:hover {
+     transform: translateY(-5px);
+
+ }
+@media(max-width: 980px){
+    header {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 10px;
+    }
+
+    .slider-box {
+        max-width: 50%;
+
+    }
+
+    .slider-box ul {
+        max-width: 100%;
+        flex-direction: row;
+
+    }
+    .slider-box img{
+       max-width: 100%;
+       height: 30%;
+      
+       
+      
+    }
+    .slider-box h2{
+       font-size: 15px;
+       text-align: center;
+    }
+    .slider-box p{
+       font-size: 13px;
+    }
+    li {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+   #ul-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+
+
+    }
+
+}
+ @media(max-width: 780px) {
+     header {
+         max-width: 100%;
+     }
+
+     .container {
+         max-width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     main {
+         max-width: 100%;
+     }
+
+     ul {
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+         margin-left: 10px;
+     }
+
+     .slider-box {
+         max-width: 100%;
+
+     }
+
+     .slider-box ul {
+         max-width: 100%;
+         flex-direction: row;
+
+     }
+     .slider-box img{
+        max-width: 100%;
+        height: auto;
+     }
+     .slider-box h2{
+        font-size: 15px;
+        text-align: center;
+     }
+     .slider-box p{
+        font-size: 12px;
+     }
+     li {
+         max-width: 100%;
+         display: flex;
+         flex-direction: row;
+     }
+
+    #ul-footer {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: row;
+         gap: 5px;
+
+
+     }
  }
